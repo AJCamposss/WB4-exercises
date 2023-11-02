@@ -8,11 +8,13 @@ function getAverage(displayedScores) {
     let average = 0;
 
     for(let i = 0; i < displayedScores.length; i++) {
-        average = average + displayedScores[i] / displayedScores.length
+        average += displayedScores[i] 
     }
+
+    average = average / displayedScores.length;
     
     return average;
 }
 
-console.log(myAverage)
-console.log(yourAverage)
+console.log(myAverage.toFixed(2))
+console.log(yourAverage.toFixed(2))
